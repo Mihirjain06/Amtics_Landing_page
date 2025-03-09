@@ -6,9 +6,64 @@
     text-align: center;
 }
 
+/* Global Font Settings */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to the entire project */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+}
+
+/* Ensure all headings and text use Montserrat */
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar Font */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer Font */
+.footer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero Section Font */
+.hero-section h1, .hero-section h6, .hero-section .btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Vision and Mission Section Font */
+.vision-mission h2, .vision-mission p, .vision-mission ul li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Salient Features Section Font */
+.salient-features h2, .salient-features h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Key Highlights Section Font */
+.key-highlights h2, .key-highlights h3, .key-highlights p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Campus Life Section Font */
+.campus-life h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-weight: 600; /* Semi-bold */
+}
+
+p {
+    font-weight: 400; /* Regular */
 }
 
 /* Hero Section */
@@ -296,13 +351,10 @@ body {
     background: rgba(67, 52, 124, 0.3); /* Semi-transparent background */
     border-radius: 50%;
     padding: 10px;
-    transition: background 0.3s ease;
+    transition:  0.3s ease;
 }
 
-.campus-life .carousel-control-prev:hover,
-.campus-life .carousel-control-next:hover {
-    background: rgba(67, 52, 124, 0.6); /* Darker background on hover */
-}
+
 
 .campus-life .carousel-control-prev-icon,
 .campus-life .carousel-control-next-icon {
@@ -363,7 +415,7 @@ body {
 .footer {
     background-color: #43347C; /* Purple background */
     color: white; /* White text */
-    padding: 40px 0; /* Increased padding */
+    padding: 20px 0; /* Increased padding */
 }
 
 .footer h3, .footer h5, .footer p, .footer a {
@@ -392,17 +444,20 @@ body {
     display: block; /* Second line */
 }
 
+.address-left-align {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* Address with Location Icon */
-.address p {
+.address p  {
     font-size: 0.9rem; /* Address font size */
     margin-bottom: 10px;
     display: flex;
     align-items: center; /* Align icon and text */
-    text-align: left;
-}
-
-.address p i {
-    margin-right: 10px; /* Space between icon and text */
+    gap: 10px; /* Space between icon and text */
 }
 
 /* Quick Links */
@@ -440,6 +495,26 @@ body {
 
 .social-icons a:hover {
     color: #ddd; /* Lighten color on hover */
+}
+
+/* Responsive Adjustments for Small Devices */
+@media (max-width: 768px) {
+    .footer-logo, .department-name, .address {
+        text-align: center; /* Center align for mobile devices */
+    }
+
+    .footer-logo img {
+        margin-right: 0; /* Remove margin for centered alignment */
+        margin-bottom: 10px; /* Add space below logo */
+    }
+
+    .department-name h3 {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .address p {
+        justify-content: center; /* Center align address items */
+    }
 }
 /* Responsive Adjustments */
 @media (max-width: 992px) {
