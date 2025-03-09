@@ -174,35 +174,42 @@
             /* Hide by default */
         }
 
+        /* Dropdown Menu for Small Devices */
         @media (max-width: 768px) {
+            .navbar-nav .dropdown-menu {
+                width: 100%;
+                /* Full width dropdown on small devices */
+                text-align: center;
+                /* Center-align dropdown items */
+                background-color: #f8f9fa;
+                /* Light background for better visibility */
+                border: none;
+                /* Remove border */
+                box-shadow: none;
+                /* Remove shadow */
+            }
+
+            .navbar-nav .dropdown-item {
+                padding: 10px 15px;
+                /* Add padding for better touch targets */
+                font-size: 10px;
+                /* Adjust font size for readability */
+                color: black !important;
+                /* Ensure text color is visible */
+            }
+
             .navbar-nav .dropdown-toggle::after {
                 display: inline-block;
-                /* Show on small devices */
+                /* Show dropdown arrow */
                 margin-left: 5px;
+                /* Space between text and arrow */
                 vertical-align: middle;
-                content: "▾";
-                /* Chevron down icon */
             }
 
-            /* Center dropdown names and items on small devices */
-            .navbar-nav .nav-link,
             .navbar-nav .dropdown-toggle {
-                text-align: center;
-                /* Center dropdown names */
                 justify-content: center;
-                /* Center dropdown names */
+                /* Center-align dropdown toggle text */
             }
-
-            .navbar-nav .dropdown-menu {
-                text-align: center;
-                /* Center dropdown items */
-            }
-        }
-
-        /* Move Toggle Button to the Right */
-        .navbar-toggler {
-            margin-left: auto;
-            /* Push toggle button to the right */
         }
 
         /* Responsive Adjustments */
@@ -211,8 +218,8 @@
                 flex-direction: column;
                 align-items: center;
                 padding: 10px;
-                gap: 10px;
-                /* Reduce gap on small screens */
+                gap: 5px;
+                
             }
 
             .navbar-brand {
