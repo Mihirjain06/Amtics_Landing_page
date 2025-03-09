@@ -135,13 +135,9 @@ p {
     background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
     border-radius: 50%;
     padding: 10px;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background: rgba(0, 0, 0, 0.6); /* Darker background on hover */
-}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -348,7 +344,7 @@ p {
 .campus-life .carousel-control-prev,
 .campus-life .carousel-control-next {
     width: 5%;
-    background: rgba(67, 52, 124, 0.3); /* Semi-transparent background */
+    background: rgba(166, 163, 178, 0.3); /* Semi-transparent background */
     border-radius: 50%;
     padding: 10px;
     transition:  0.3s ease;
@@ -424,16 +420,16 @@ p {
 
 /* Logo and Department Name */
 .footer-logo img {
-    width: 58px;
-    height: 58px;
-    margin-right: 20px; /* Increased space between logo and text */
+    width: 55px;
+    height: 55px;
+    margin-right: 10px; /* Increased space between logo and text */
 }
 
 .department-name h3 {
-    font-size: 1rem; /* Department name font size */
+    font-size: 0.9rem; /* Department name font size */
     font-weight: bold;
     margin: 0; /* Remove default margin */
-    line-height: 1.2; /* Adjust line height */
+    line-height: 1.3; /* Adjust line height */
 }
 
 .department-name .line1 {
@@ -507,9 +503,20 @@ p {
         margin-right: 0; /* Remove margin for centered alignment */
         margin-bottom: 10px; /* Add space below logo */
     }
-
+    .campus-life .carousel-item .col-md-6 {
+        margin-bottom: 1rem; /* Adjust the gap size as needed */
+    }
+    .campus-life .carousel-item .col-md-6:last-child {
+        margin-bottom: 0; /* Remove margin for the last image */
+    }
+    
     .department-name h3 {
         font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .address-left-align{
+        text-align: center;
+        justify-content: center;
     }
 
     .address p {
